@@ -1,0 +1,1462 @@
+@charset "UTF-8";
+
+/*   ----------!!!!!"AUTO" WIDTH FOR SPACE BETWEEN LOGO AND LINKS???!!!!!----------   */
+
+/*   ----------!!!!!MEDIA QUERY TO SEPARATE LG DESKTOPS FROM SM DESKTOPS/LG TABLETS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY TO SEPARATE LG DESKTOPS FROM SM DESKTOPS/LG TABLETS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY TO SEPARATE LG DESKTOPS FROM SM DESKTOPS/LG TABLETS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY TO SEPARATE LG DESKTOPS FROM SM DESKTOPS/LG TABLETS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY TO SEPARATE LG DESKTOPS FROM SM DESKTOPS/LG TABLETS???!!!!!----------   */
+
+/*   ----------!!!!!MEDIA QUERY FOR NARROW DESKTOP WINDOWS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY FOR NARROW DESKTOP WINDOWS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY FOR NARROW DESKTOP WINDOWS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY FOR NARROW DESKTOP WINDOWS???!!!!!----------   */
+/*   ----------!!!!!MEDIA QUERY FOR NARROW DESKTOP WINDOWS???!!!!!----------   */
+
+/*   ----------!!!!!REMOVE BUTTON ANIMATION!!!!!----------   */
+/*   ----------!!!!!REMOVE BUTTON ANIMATION!!!!!----------   */
+/*   ----------!!!!!REMOVE BUTTON ANIMATION!!!!!----------   */
+/*   ----------!!!!!REMOVE BUTTON ANIMATION!!!!!----------   */
+/*   ----------!!!!!REMOVE BUTTON ANIMATION!!!!!----------   */
+
+/*   ----------!!!!!FIX vw/vh UNITS FOR MOBILE SAFARI (JAVASCRIPT/JQUERY?)!!!!!----------   */
+/*   ----------!!!!!FIX vw/vh UNITS FOR MOBILE SAFARI (JAVASCRIPT/JQUERY?)!!!!!----------   */
+/*   ----------!!!!!FIX vw/vh UNITS FOR MOBILE SAFARI (JAVASCRIPT/JQUERY?)!!!!!----------   */
+/*   ----------!!!!!FIX vw/vh UNITS FOR MOBILE SAFARI (JAVASCRIPT/JQUERY?)!!!!!----------   */
+/*   ----------!!!!!FIX vw/vh UNITS FOR MOBILE SAFARI (JAVASCRIPT/JQUERY?)!!!!!----------   */
+
+/*   ----------!!!!!FIX RED COLOR!!!!!----------   */
+/*   ----------!!!!!FIX RED COLOR!!!!!----------   */
+/*   ----------!!!!!FIX RED COLOR!!!!!----------   */
+/*   ----------!!!!!FIX RED COLOR!!!!!----------   */
+/*   ----------!!!!!FIX RED COLOR!!!!!----------   */
+
+/*   ----------!!!!!COLORS WASHED OUT ON ANDROID???!!!!!----------   */
+/*   ----------!!!!!COLORS WASHED OUT ON ANDROID???!!!!!----------   */
+/*   ----------!!!!!COLORS WASHED OUT ON ANDROID???!!!!!----------   */
+/*   ----------!!!!!COLORS WASHED OUT ON ANDROID???!!!!!----------   */
+/*   ----------!!!!!COLORS WASHED OUT ON ANDROID???!!!!!----------   */
+
+
+
+
+
+/*---------------UNIVERSAL STYLES---------------*/
+html {
+	text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	height: -webkit-fill-available;
+}
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     line-height: 1;
+	/*border: 0.5px solid red;*/
+}
+
+body {
+	display: grid;
+	grid-template: 1fr auto / 100%;
+	width: 100%;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+	background: #000000;
+	font-family: neue-kabel, "ITC Kabel", "Gill Sans", sans-serif;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+/*---HEADER & NAVIGATION---*/
+header {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	background: #000000;
+	/*box-shadow: 0vw 2.15vw 5vw -2.5vw #080808;*/
+}
+
+.logo {
+	display: grid;
+	grid-template: 100% / 100%;
+	justify-items: center;
+	align-items: center;
+	height: 100%;
+	transition: background 0.4s;
+}
+
+.logo:hover {
+	background: #151515;
+}
+
+.logo img {
+	/*display: block; !!!!!!!!!!!!!!!!!!!!CHANGE THIS???!!!!!!!!!!!!!!!!!!!!*/
+	font-weight: 600; /*!!!!!!!!!!!!!!!!!!!!CHANGE THIS???!!!!!!!!!!!!!!!!!!!!*/
+	/*!!!!!!!!!!!!!!!!!!!!ADD font-size???!!!!!!!!!!!!!!!!!!!!*/
+}
+
+.textlogo, .textlogo-hover {
+	grid-area: 1/1 / 2/2;
+	transition: opacity 0.5s;
+	cursor: pointer;
+}
+
+.logo:hover .textlogo {
+	opacity: 0;
+}
+
+.textlogo-hover {
+	opacity: 0;
+}
+
+.logo:hover .textlogo-hover {
+	opacity: 1;
+}
+
+.navlink {
+	color: #ffffff;
+	text-transform: uppercase;
+	transition: color 0.25s, background 0.3s;
+}
+
+.navlink:hover {
+	background: #151515;
+	color: #801016;
+}
+
+
+
+
+
+/*---CONTENT---*/
+main {
+	display: grid;
+	justify-items: center;
+	grid-area: 1/1 / 2/2;
+}
+
+main h1 {
+	margin: 1.75rem 0 0 0;
+}
+
+#service1, #service2, #service3, #service4, #service5 {
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 0.95;
+}
+
+#carousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #353535;
+	text-align: center;
+}
+
+main p + p {
+	margin: 1.25rem 0 0 0;
+}
+
+#offer {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#offer1, #offer2, #offer3 {
+	line-height: 0.95;
+}
+
+
+
+
+/*---FOOTER---*/
+footer {
+	display: grid;
+	grid-template: repeat(4, auto) / repeat(2, 50%);
+	margin: auto;
+	/*background: chocolate;*/
+}
+
+.slogan {
+	grid-area: 1/1 / 2/3;
+	text-transform: uppercase;
+	text-align: center;
+	color: #801016;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-area: 2/1 / 3/2;
+}
+
+#company-name {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#city, #email, #phone {
+	font-weight: 300;
+}
+
+#city, #email, #phone, #social-icons {
+	line-height: 1.1;
+}
+
+#email a {
+	color: #ffffff;
+	transition: color 0.25s;
+}
+
+#email a:hover {
+	color: #801016;
+}
+
+#phone a {
+	color: #ffffff;
+	transition: color 0.25s;
+}
+
+#phone a:hover {
+	color: #801016;
+}
+
+#social-icons {
+	font-weight: 600;
+}
+
+#bottomlogodiv {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	grid-area: 2/2 / 3/3;
+}
+
+#copyright-host {
+	grid-area: 3/1 / 4/3;
+	color: #858585;
+	text-align: center;
+}
+
+#copyright {
+	font-style: italic;
+}
+
+#host {
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------DESKTOP & LARGE TABLET LANDSCAPE STYLES---------------*/
+@media only screen and (min-device-width: 900.01px) and (orientation: landscape) {
+	/*---HEADER & NAVIGATION---*/
+	#wide-menu {
+		display: grid;
+		grid-template: 4vw / 23.5vw 11.5vw repeat(5, 1fr);
+		width: 97%;
+		margin: 0 auto 0 1.5%; /*--------------------CHANGE???--------------------*/
+		/*box-shadow: 0vw 2.15vw 5vw -2.5vw #080808;*/
+	}
+	
+	.logo img {
+		height: 2.15vw;
+		font-size: 2.15vw;
+	}
+
+	.navlink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		font-size: 1.625vw;
+		font-weight: 300;
+	}
+
+	#narrow-menu {
+		display: none;
+	}
+
+
+
+
+	/*---CONTENT---*/
+	main {
+		display: grid;
+		grid-template: repeat(6, auto) / minmax(400px, 50vw) auto;
+		padding: 6vw 0 20px 0;
+	}
+
+	#toplogodiv {
+		display: flex;
+		grid-area: 1/1 / 2/2;
+		width: 100%;
+		align-items: center;
+	}
+
+	#toplogo {
+		width: 40%;
+		margin: 2vw auto 2vw 25%;
+	}
+
+	#services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: 1/2 / 2/3;
+		width: 100%;
+	}
+
+	#service1 {
+		font-size: 3.5vw;
+	}
+
+	#service2 {
+		font-size: 4vw;
+	}
+
+	#service3 {
+		font-size: 3.53125vw;
+	}
+
+	#service4 {
+		font-size: 4.53125vw;
+	}
+
+	#service5 {
+		font-size: 2.875vw;
+	}
+
+	#carousel {
+		grid-area: 2/1 / 3/3;
+		margin: 3vw 0 0 0;
+		width: 100%;
+		height: 575px;
+		font-size: 3rem;
+	}
+
+	#bodycopy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		grid-area: 3/1 / 4/3;
+		max-width: 80%;
+		margin: 5vw 0 0 0;
+	}
+
+	.bodycopy {
+		grid-column: 1/3;
+		font-size: 1.1875em;
+		font-weight: 300;
+	}
+
+	#offer {
+		grid-area: 5/1 / 6/3;
+		margin: 50px 0 0 0;
+		font-size: 2.25vw;
+	}
+
+	#offer2, #offer3 {
+		display: none;
+	}
+	
+
+
+
+	/*---FOOTER---*/
+	footer {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.slogan {
+		margin: 35px auto 20px auto;
+		font-size: 2rem;
+	}
+
+	#company-name {
+		margin: 0 0 0.5625rem 0;
+	}
+	
+	#city, #email, #phone, #social-icons {
+		font-size: 14px;
+	}
+
+	#bottomlogo {
+		height: 100px;
+	}
+
+	#copyright-host {
+		margin: 25px 0 0 0;
+		font-weight: 300;
+	}
+
+	#copyright {
+		font-size: 12px;
+	}
+
+	#host {
+		margin: 2px 0 0 0;
+		font-size: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------DESKTOP & LARGE TABLET PORTRAIT STYLES---------------*/
+@media only screen and (min-device-width: 900.01px) and (orientation: portrait) {
+	/*---HEADER & NAVIGATION---*/
+	#wide-menu {
+		display: grid;
+		grid-template: 6.25vw 3.5vw / repeat(5, auto);
+		width: 95%;
+		margin: auto;
+	}
+
+	.EMPTY {
+		display: none;
+	}
+
+	.logo {
+		grid-area: 1/1 / 2/6;
+		width: 41vw;
+		margin: auto;
+	}
+
+	.textlogo, .textlogo-hover {
+		width: 38.25vw;
+	}
+
+	.navlink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.125vw;
+		font-weight: 300;
+	}
+
+	#navlink1 {
+		grid-area: 2/1 / 3/2;
+	}
+
+	#navlink2 {
+		grid-area: 2/2 / 3/3;
+	}
+
+	#navlink3{
+		grid-area: 2/3 / 3/4;
+	}
+
+	#navlink4 {
+		grid-area: 2/4 / 3/5;
+	}
+
+	#navlink5 {
+		grid-area: 2/5 / 3/6;
+	}
+
+	#narrow-menu {
+		display: none;
+	}
+
+
+
+
+
+	/*---CONTENT---*/
+	main {
+		display: grid;
+		grid-template: 100% / 40% 60%;
+		margin: 9.75vw 0 0 0;
+		width: 100%;
+	}
+
+	#toplogodiv {
+		display: flex;
+		grid-area: 1/1 / 2/2;
+		width: 100%;
+		align-items: center;
+	}
+
+	#toplogo {
+		width: 70%;
+		margin: 10vw auto 10vw 21.25%;
+	}
+
+	#services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: 1/2 / 2/3;
+		width: 100%;
+	}
+
+	#service1 {
+		font-size: 5vw;
+	}
+
+	#service2 {
+		font-size: 5.75vw;
+	}
+
+	#service3 {
+		font-size: 5.125vw;
+	}
+
+	#service4 {
+		font-size: 6.5vw;
+	}
+
+	#service5 {
+		font-size: 4vw;
+	}
+
+	#carousel {
+		grid-area: 2/1 / 3/3;
+		width: 100%;
+		height: 600px;
+		font-size: 2.5rem;
+	}
+
+	#bodycopy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		grid-area: 3/1 / 4/3;
+		margin: 10vw 0 0 0;
+		max-width: 80%;
+	}
+
+	.bodycopy {
+		grid-column: 1/3;
+		font-size: 1.1875em;
+		font-weight: 300;
+	}
+
+	#offer {
+		grid-area: 5/1 / 6/3;
+		margin: 50px 0 0 0;
+	}
+
+	#offer1 {
+		display: none;
+	}
+
+	#offer2 {
+		font-size: 5vw;
+	}
+
+	#offer3 {
+		font-size: 5.75vw;
+	}
+	
+
+
+
+
+	/*---FOOTER---*/
+	footer {
+		width: 88.25%;
+		margin-bottom: 20px;
+	}
+
+	.slogan {
+		margin: 35px auto 20px auto;
+		font-size: 2rem;
+	}
+	
+	#company-name {
+		margin: 0 0 0.5625rem 0;
+	}
+	
+	#city, #email, #phone, #social-icons {
+		font-size: 14px;
+		font-weight: 300;
+	}
+	
+	#bottomlogo {
+		height: 100px;
+	}
+
+	#copyright-host {
+		margin: 25px 0 0 0;
+		font-weight: 300;
+	}
+
+	#copyright {
+		font-size: 12px;
+	}
+
+	#host {
+		margin: 2px 0 0 0;
+		font-size: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*---------------TABLET LANDSCAPE STYLES---------------*/
+@media only screen and (min-device-width: 550.01px) and (max-device-width: 900px) and (orientation: landscape) {
+	/*---HEADER & NAVIGATION---*/
+	#wide-menu {
+		display: grid;
+		grid-template: 5.125vw / 34.25vw 2.5vw repeat(5, auto);
+		width: 97%;
+		margin: 0 auto; /*--------------------CHANGE???--------------------*/
+		background: #000000;
+		/*box-shadow: 0vw 2.15vw 5vw -2.5vw #080808;*/
+	}
+
+	.logo img {
+		height: 3.125vw;
+		font-size: 3.125vw;
+	}
+
+	.navlink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-size: 2.125vw;
+		font-weight: 300;
+		transition: color 0.25s, background 0.3s;
+	}
+
+	/*#navlink1{background:pink;}
+	#navlink2{background:purple;}
+	#navlink3{background:lightblue;}
+	#navlink4{background:darkgoldenrod;}
+	#navlink5{background:mediumspringgreen;}*/
+
+	#narrow-menu {
+		display: none;
+	}
+
+
+
+
+
+	/*---CONTENT---*/
+	main {
+		display: grid;
+		grid-template: repeat(6, auto) / 40% 60%;
+		padding: 4vw 0 25px 0;
+	}
+
+	#toplogodiv {
+		display: flex;
+		grid-area: 1/1 / 2/2;
+		width: 100%;
+		align-items: center;
+	}
+
+	#toplogo {
+		width: 60%;
+		margin: 5vw auto 5vw 35%;
+	}
+
+	#services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: 1/2 / 2/3;
+		width: 100%;
+	}
+
+	#service1 {
+		font-size: 4vw;
+	}
+
+	#service2 {
+		font-size: 4.625vw;
+	}
+
+	#service3 {
+		font-size: 4.125vw;
+	}
+
+	#service4 {
+		font-size: 5.25vw;
+	}
+
+	#service5 {
+		font-size: 3.75vw;
+	}
+
+	#carousel {
+		grid-area: 2/1 / 3/3;
+		width: 100%;
+		height: 550px;
+		font-size: 3rem;
+	}
+
+	#bodycopy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		grid-area: 3/1 / 4/3;
+		margin: 5vw 0 0 0;
+		max-width: 80%;
+	}
+
+	.bodycopy {
+		grid-column: 1/3;
+		font-size: 1.1875em;
+		font-weight: 300;
+	}
+
+	#offer {
+		grid-area: 5/1 / 6/3;
+		margin: 50px 0 0 0;
+		font-size: 2.25vw;
+	}
+
+	#offer2, #offer3 {
+		display: none;
+	}
+
+
+
+
+
+	/*---FOOTER---*/
+	footer {
+		width: 82.5%;
+		margin-bottom: 20px;
+	}
+
+	.slogan {
+		margin: 35px auto 20px auto;
+		font-size: 2rem;
+	}
+
+	#company-name {
+		margin: 0 0 0.5625rem 0;
+		font-size: 14px;
+	}
+	
+	#city, #email, #phone, #social-icons {
+		font-size: 12px;
+	}
+
+	#bottomlogo {
+		height: 87.5px;
+	}
+
+	#copyright-host {
+		margin: 25px 0 0 0;
+		font-weight: 400;
+	}
+
+	#copyright {
+		font-size: 10px;
+	}
+
+	#host {
+		margin: 2px 0 0 0;
+		font-size: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------TABLET PORTRAIT STYLES---------------*/
+@media only screen and (min-device-width: 550.01px) and (max-device-width: 900px) and (orientation: portrait) {
+	/*---HEADER & NAVIGATION---*/
+	#wide-menu {
+		display: grid;
+		grid-template: 7.125vw 4.125vw / repeat(5, auto);
+		width: 97%;
+		margin: auto;
+	}
+
+	.EMPTY {
+		display: none;
+	}
+
+	.logo {
+		grid-area: 1/1 / 2/6;
+		width: 45vw;
+		margin: auto;
+	}
+
+	.textlogo, .textlogo-hover {
+		width: 42.5vw;
+	}
+
+	.navlink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.625vw;
+		font-weight: 400;
+	}
+
+	#navlink1 {
+		grid-area: 2/1 / 3/2;
+	}
+
+	#navlink2 {
+		grid-area: 2/2 / 3/3;
+	}
+
+	#navlink3{
+		grid-area: 2/3 / 3/4;
+	}
+
+	#navlink4 {
+		grid-area: 2/4 / 3/5;
+	}
+
+	#navlink5 {
+		grid-area: 2/5 / 3/6;
+	}
+
+	#narrow-menu {
+		display: none;
+	}
+
+
+
+
+
+	/*---CONTENT---*/
+	main {
+		display: grid;
+		grid-template: repeat(6, auto) / 40% 60%;
+		margin: 11.875vw 0 0 0;
+		padding: 0 0 25px 0;
+	}
+
+	#toplogodiv {
+		display: flex;
+		grid-area: 1/1 / 2/2;
+		width: 100%;
+		align-items: center;
+	}
+
+	#toplogo {
+		width: 80%;
+		margin: 9vw auto 9vw 17.5%;
+	}
+
+	#services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: 1/2 / 2/3;
+		width: 100%;
+	}
+
+	#service1 {
+		font-size: 5vw;
+	}
+
+	#service2 {
+		font-size: 5.75vw;
+	}
+
+	#service3 {
+		font-size: 5.125vw;
+	}
+
+	#service4 {
+		font-size: 6.625vw;
+	}
+
+	#service5 {
+		font-size: 5vw;
+	}
+
+	#carousel {
+		grid-area: 2/1 / 3/3;
+		width: 100%;
+		height: 500px;
+		font-size: 2.5rem;
+	}
+
+	#bodycopy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		grid-area: 3/1 / 4/3;
+		margin: 6.5vw 0 0 0;
+		max-width: 80%;
+	}
+
+	.bodycopy {
+		grid-column: 1/3;
+		font-size: 1.1875em;
+		font-weight: 300;
+	}
+
+	#offer {
+		grid-area: 5/1 / 6/3;
+		margin: 50px 0 0 0;
+	}
+
+	#offer1 {
+		display: none;
+	}
+
+	#offer2 {
+		font-size: 34.5pt;
+	}
+
+	#offer3 {
+		font-size: 40pt;
+	}
+	
+
+
+
+
+	/*---FOOTER---*/
+	footer {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.slogan {
+		margin: 35px auto 20px auto;
+		font-size: 2rem;
+	}
+
+	#company-name {
+		margin: 0 0 0.5625rem 0;
+	}
+	
+	#city, #email, #phone, #social-icons {
+		font-size: 14px;
+	}
+
+	#bottomlogo {
+		height: 100px;
+	}
+
+	#copyright-host {
+		margin: 25px 0 0 0;
+		font-weight: 400;
+	}
+
+	#copyright {
+		font-size: 12px;
+	}
+
+	#host {
+		margin: 2px 0 0 0;
+		font-size: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------MOBILE PORTRAIT STYLES---------------*/
+@media only screen and (max-device-width: 550px) and (orientation: portrait) {
+	/*---HEADER & NAVIGATION---*/
+	#wide-menu {
+		display: none;
+	}
+	
+	#narrow-menu {
+		display: grid;
+		width: 100%;
+		grid-template: 12.5vw / repeat(2, 1fr) 12.25vw;
+	}
+	
+	#logodiv {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.logo {
+		margin: 0;
+		padding: 0 3vw 0 3vw;
+	}
+	
+	.logo img {
+		height: 7vw;
+		font-size: 7vw;
+	}
+
+	#burger {
+		display: grid;
+		grid-template: 12.5vw / 12.5vw;
+		position: relative;
+	}
+	
+	#toggle {
+		grid-area: 1/1 / 2/2;
+		z-index: 4;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		touch-action: none;
+	}
+	
+	.line, .x {
+		grid-area: 1/1 / 2/2;
+		z-index: 3;
+		width: 8vw;
+		transition: transform 0.6s, opacity 0.5s, width 0.4s;
+	}
+	
+	#line1 {
+		margin: 3.75vw auto auto auto;
+	}
+	
+	#line2, #x1, #x2 {
+		margin: auto;
+	}
+	
+	#line3 {
+		margin: auto auto 3.75vw auto;
+	}
+
+	#toggle:checked ~ #line1, #toggle:checked ~ #line2, #toggle:checked ~ #line3 {
+		opacity: 0;
+	}
+	
+	#x1, #x2 {
+		opacity: 0;
+	}
+
+	#toggle:checked ~ #x1, #toggle:checked ~ #x2 {
+		width: 8.5vw;
+		opacity: 1;
+	}
+
+	#toggle:checked ~ #x1 {
+		transform: rotate(45deg);
+	}
+	
+	#toggle:checked ~ #x2 {
+		transform: rotate(-45deg);
+	}
+	
+	#burger-bg {
+		opacity: 0;
+		grid-area: 1/1 / 2/2;
+		z-index: 0;
+		background: #181818;
+		transition: opacity 1s;
+	}
+
+	#toggle:checked ~ #burger-bg {
+		opacity: 1;
+	}
+
+	#burger-hover {
+		opacity: 0;
+		grid-area: 1/1 / 2/2;
+		z-index: 2;
+		background: #121212;
+	}
+
+	#toggle:hover ~ #burger-hover {
+		opacity: 1;
+	}
+	
+	#dropdown {
+		opacity: 0;
+		position: fixed;
+		top: 9.5vw;
+		left: 0;
+		z-index: 5;
+		background: #181818;
+		width: 100vw;
+		grid-area: 1/1 / 2/2;
+		transition: opacity 0.5s, transform 0.5s;
+		/*box-shadow: 0vw 2.15vw 5vw -2.5vw #121212;*/
+	}
+
+	#toggle:checked ~ #dropdown {
+		z-index: 5;
+		opacity: 1;
+		transform: translateY(3vw);
+	}
+	
+	#dropdown-content {
+		display: grid;
+	}
+	
+	.navlink {
+		display: flex;
+		height: 12.5vw;
+		font-size: 6.25vw;
+		font-weight: 500;
+	}
+
+	.navlink:hover {
+		background: #121212;
+	}
+	
+	.navlink p {
+		margin: auto 0 auto 8.5vw;
+	}
+	
+	#uncheck {
+		position: fixed;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		opacity: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+	}
+
+	#toggle:checked ~ #uncheck {
+		visibility: visible;
+	}
+
+
+
+
+
+	/*---CONTENT---*/
+	main {
+		width: 100%;
+		padding: 12.5vw 0 2.5vw 0;
+		margin: 7.5vw auto 0 auto;
+	}
+
+	#toplogo {
+		height: 42.5vh;
+		margin: 6.5vw auto 6.5vw auto;
+	}
+
+	#carousel {
+		height: 37.5vh;
+		margin: 15vw 0 0 0;
+		font-size: 1.125rem;
+	}
+
+	#services {
+		margin: 25vw 0 0 0;
+	}
+
+	#service1 {
+		font-size: 4.5vh;
+	}
+	
+	#service2 {
+		font-size: 5.25vh;
+	}
+	
+	#service3 {
+		font-size: 4.625vh;
+	}
+	
+	#service4 {
+		font-size: 5.875vh;
+	}
+	
+	#service5 {
+		font-size: 4vh;
+	}
+	
+	#bodycopy {
+		width: 87.5%;
+		margin: 10vw auto 0 auto;
+	}
+
+	.bodycopy {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+	#offer {
+		margin: 3rem 0 0 0;
+	}
+
+	#offer1 {
+		display: none;
+	}
+
+	#offer2 {
+		font-size: 1.625rem;
+	}
+
+	#offer3 {
+		font-size: 1.875rem;
+	}
+
+
+
+
+
+	/*---FOOTER---*/
+	footer {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.slogan {
+		margin: 35px auto 20px auto;
+		font-size: 1.375rem;
+	}
+
+	#company-name {
+		margin: 0 0 0.5625rem 0;
+	}
+	
+	#city, #email, #phone, #social-icons {
+		font-size: 14px;
+	}
+
+	#bottomlogo {
+		height: 82.5px;
+	}
+
+	#copyright-host {
+		margin: 25px 0 0 0;
+		font-weight: 400;
+	}
+
+	#copyright {
+		font-size: 10px;
+	}
+
+	#host {
+		margin: 2px 0 0 0;
+		font-size: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------MOBILE LANDSCAPE STYLES---------------*/
+@media only screen and (max-device-width: 550px) and (orientation: landscape) {	
+	/*---HEADER & NAVIGATION---*/
+	#wide-menu {
+		display: grid;
+		grid-template: 5.125vw / 32vw 1vw repeat(5, auto);
+		width: 97%;
+		margin: 0 auto; /*--------------------CHANGE???--------------------*/
+		background: #000000;
+		/*box-shadow: 0vw 2.15vw 5vw -2.5vw #080808;*/
+	}
+
+	.logo {
+		/*background: green;*/
+	}
+
+	.logo img {
+		height: 3vw;
+		font-size: 3vw;
+	}
+
+	.navlink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-size: 2.5625vw;
+		font-weight: 400;
+		line-height: 1;
+		transition: color 0.25s, background 0.3s;
+	}
+
+	/*#navlink1{background:pink;}
+	#navlink2{background:purple;}
+	#navlink3{background:lightblue;}
+	#navlink4{background:darkgoldenrod;}
+	#navlink5{background:mediumspringgreen;}*/
+
+	#narrow-menu {
+		display: none;
+	}
+
+
+
+
+
+	/*---CONTENT---*/
+	main {
+		display: grid;
+		grid-template: 80vh repeat(5, auto) / 40% auto;
+		width: 97.5%;
+		margin: 6vw auto 2vw auto;
+	}
+
+	#toplogodiv {
+		display: flex;
+		grid-area: 1/1 / 2/2;
+		width: 100%;
+		align-items: center;
+	}
+
+	#toplogo {
+		height: 70%;
+		margin: 0 auto 0 15%;
+	}
+
+	#services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: 1/2 / 2/3;
+		width: 100%;
+	}
+
+	#service1 {
+		font-size: 5.13vw;
+	}
+
+	#service2 {
+		font-size: 5.95vw;
+	}
+
+	#service3 {
+		font-size: 5.25vw;
+	}
+
+	#service4 {
+		font-size: 6.625vw;
+	}
+
+	#service5 {
+		font-size: 4.5vw;
+	}
+
+	#carousel {
+		grid-area: 2/1 / 3/3;
+		width: 100%;
+		height: 80vh;
+		margin: 5.5vw 0 0 0;
+		font-size: 1rem;
+	}
+
+	#bodycopy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		grid-area: 3/1 / 4/3;
+	}
+
+	.bodycopy {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+	#offer {
+		grid-area: 4/1 / 5/3;
+		margin: 3vw 0 0 0;
+		font-size: 1.125rem;
+	}
+
+	#offer2, #offer3 {
+		display: none;
+	}
+
+
+
+
+	
+	/*---FOOTER---*/
+	footer {
+		margin: 0 auto 20px auto;
+		width: 90%;
+	}
+
+	.slogan {
+		margin: 35px auto 20px auto;
+		font-size: 1.625rem;
+	}
+
+	#company-name {
+		margin: 0 0 0.5625rem 0;
+	}
+	
+	#city, #email, #phone, #social-icons {
+		font-size: 14px;
+	}
+
+	#bottomlogo {
+		height: 82.5px;
+	}
+
+	#copyright-host {
+		margin: 25px 0 0 0;
+		font-weight: 400;
+	}
+
+	#copyright {
+		font-size: 10px;
+	}
+
+	#host {
+		margin: 2px 0 0 0;
+		font-size: 8px;
+	}
+}
