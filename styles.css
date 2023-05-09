@@ -194,7 +194,7 @@ footer {
 	grid-area: 1/1 / 2/3;
 	text-transform: uppercase;
 	text-align: center;
-	font-weight: 300;
+	color: #801016
 }
 
 #contact {
@@ -217,21 +217,12 @@ footer {
 	line-height: 1.1;
 }
 
-#email a {
+#email a, #phone a {
 	color: #ffffff;
 	transition: color 0.25s;
 }
 
-#email a:hover {
-	color: #801016;
-}
-
-#phone a {
-	color: #ffffff;
-	transition: color 0.25s;
-}
-
-#phone a:hover {
+#email a:hover, #phone a:hover {
 	color: #801016;
 }
 
